@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Тренажёр по языкам программированиям</title>
+        <link rel="icon" href="{{ url_for('static', filename='imog/nebo.jpg') }}" type="image/x-icon" />
+        <link
+            rel="shortcut icon"
+            href="{{ url_for('static', filename='imog/nebo.jpg') }}"
+            type="image/x-icon"
+        />
+    <link href="{{ url_for('static', filename='css/python.css') }}" rel="stylesheet" />
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1 class="page-heading">CSS блочная модель</h1>
+        </div>
+    </header>
+    <main class="container">
+        <div class="game-zones">
+            <section class="form-wrapper">
+                <form id="heroForm" class="form">
+                    <div class="form-div">
+                        <h1 class="page-heding">Определение </h1>
+                        <p>Каждый блок имеет область содержимого, в которой находится текст, дочерние элементы,
+                            изображение и т.п., и необязательные окружающие ее padding, border и margin.
+                            Размер определяется свойствами и может быть нулевым, или в случае margin, отрицательным.</p>
+                    </div>
+                </form>
+                <img src="/static/imog/css4.jpg" class="imog-a">
+                <form id="heoForm" class="form">
+                    <div class="form-div">
+                        <h1 class="page-heding">отступы в css</h1>
+                    </div>
+                </form>
+                <img src="/static/imog/css5.jpeg" class="imog-a">
+            </section>
+        </div>
+    </main>
+</body>
+</html>

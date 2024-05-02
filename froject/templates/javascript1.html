@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/html">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Тренажёр по языкам программированиям</title>
+        <link rel="icon" href="{{ url_for('static', filename='imog/nebo.jpg') }}" type="image/x-icon" />
+        <link
+            rel="shortcut icon"
+            href="{{ url_for('static', filename='imog/nebo.jpg') }}"
+            type="image/x-icon"
+        />
+    <link href="{{ url_for('static', filename='css/python.css') }}" rel="stylesheet" />
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1 class="page-heading">Основы JavaScript</h1>
+        </div>
+    </header>
+    <main class="container">
+        <div class="game-zones">
+            <section class="form-wrapper">
+                <form id="heroForm" class="form">
+                    <div class="form-div">
+                        <h1 class="page-heding">Основы JavaScript</h1>
+                        <p>JavaScript — язык сценариев, или скриптов. Скрипт представляет собой программный
+                            код — набор инструкций, который не требует предварительной обработки (например, компиляции)
+                            перед запуском. Код JavaScript интерпретируется движком браузера во время загрузки
+                            веб-страницы. Интерпретатор браузера выполняет построчный анализ, обработку и выполнение
+                            исходной программы или запроса.</p>
+                        <h3 class="page-heding">Подключение сценариев к html-документу</h3>
+                        <p>Программы на JavaScript могут быть вставлены в любое место HTML-документа
+                            с помощью тега
+                            script.</p>
+                        <h3 class="page-heding">внешние скрипты</h3>
+                        <p>Если у вас много JavaScript-кода, вы можете поместить его в отдельный файл.
+                            Файл скрипта можно подключить к HTML с помощью атрибута src:<br>
+                            «script src="/path/to/script.js"»<br>«/script»</p>
+                        <p>Здесь /path/to/script.js – это абсолютный путь от корневой папки до необходимого файла.
+                            Корневой папкой может быть корень диска или корень сайта, в зависимости от условий работы
+                            сайта. Также можно указать относительный путь от текущей страницы. Например, src="script.js"
+                            или src="./script.js" будет означать, что файл "script.js" находится в текущей папке.</p>
+                        <p>Тег «script» имеет несколько атрибутов, которые редко используются, но всё ещё могут
+                            встретиться в старом коде: Атрибут type: «script type=…» Старый стандарт HTML, HTML4,
+                            требовал
+                            наличия этого атрибута в теге «script». Обычно он имел значение type="text/javascript". На
+                            текущий момент этого больше не требуется. Более того, в современном стандарте HTML смысл
+                            этого
+                            атрибута полностью изменился. Теперь он может использоваться для JavaScript-модулей. Но это
+                             тема не для начального уровня, и о ней мы поговорим в другой части учебника. Атрибут
+                            language:
+                             «script language=…» Этот атрибут должен был задавать язык, на котором написан скрипт. Но так
+                              как JavaScript является языком по умолчанию, в этом атрибуте уже нет необходимости.</p>
+                    </div>
+                </form>
+            </section>
+        </div>
+    </main>
+</body>
+</html>

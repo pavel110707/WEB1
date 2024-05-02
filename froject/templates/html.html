@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Тренажёр по языкам программированиям</title>
+        <link rel="icon" href="{{ url_for('static', filename='imog/nebo.jpg') }}" type="image/x-icon" />
+        <link
+            rel="shortcut icon"
+            href="{{ url_for('static', filename='imog/nebo.jpg') }}"
+            type="image/x-icon"
+        />
+    <link href="{{ url_for('static', filename='css/index.css') }}" rel="stylesheet" />
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1 class="page-heading">Html</h1>
+        </div>
+    </header>
+    <main class="container">
+        <div class="game-zones">
+            <section class="form-wrapper">
+                <h3 class="from-h3">HTML (от англ. HyperText Markup Language — «язык гипертекстовой разметки») —
+                    стандартизированный язык разметки документов для просмотра веб-страниц в браузере. Веб-браузеры
+                    получают HTML документ от сервера по протоколам HTTP / HTTPS или открывают с локального диска,
+                    далее интерпретируют код в интерфейс, который будет отображаться на экране монитора. Элементы HTML
+                    являются строительными блоками HTML страниц.</h3>
+                <form id="heroForm" class="form">
+                    <a href={{url_for('static', filename='fail/html.pdf')}} class="form-a">Шпаргалка</a>
+                    <a href={{url_for("html1")}} class="form-a">Теги</a>
+                    <a href={{url_for("html2")}} class="form-a">Атрибуты</a>
+                    <a href={{url_for("html3")}} class="form-a">Текст</a>
+                </form>
+            </section>
+        </div>
+    </main>
+</body>
+</html>

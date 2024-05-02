@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Тренажёр по языкам программированиям</title>
+        <link rel="icon" href="{{ url_for('static', filename='imog/nebo.jpg') }}" type="image/x-icon" />
+        <link
+            rel="shortcut icon"
+            href="{{ url_for('static', filename='imog/nebo.jpg') }}"
+            type="image/x-icon"
+        />
+    <link href="{{ url_for('static', filename='css/index.css') }}" rel="stylesheet" />
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1 class="page-heading">Css</h1>
+        </div>
+    </header>
+    <main class="container">
+        <div class="game-zones">
+            <section class="form-wrapper">
+                <h3 class="from-h3">CSS (англ. Cascading Style Sheets «каскадные таблицы стилей») — формальный язык
+                    декодирования и описания внешнего вида документа (веб-страницы), написанного с использованием языка
+                    разметки (чаще всего HTML или XHTML). Также может применяться к любым XML-документам, например,
+                    к SVG или XUL.</h3>
+                <form id="heroForm" class="form">
+                    <a href={{url_for('static', filename='fail/css.pdf')}} class="form-a">Шпаргалка</a>
+                    <a href={{url_for("css1")}} class="form-a">Основы CSS</a>
+                    <a href={{url_for("css2")}} class="form-a">CSS блочная модель</a>
+                </form>
+            </section>
+        </div>
+    </main>
+</body>
+</html>

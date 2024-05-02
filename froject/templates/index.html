@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <div><title>Тренажёр по языкам программированиям</title></div>
+    <link rel="icon" href="{{ url_for('static', filename='imog/nebo.jpg') }}" type="image/x-icon"/>
+    <link
+            rel="shortcut icon"
+            href="{{ url_for('static', filename='imog/nebo.jpg') }}"
+            type="image/x-icon"
+    />
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/index.css') }}"/>
+</head>
+<body>
+<header>
+    <div class="container">
+        <h1 class="page-heading">Добро пожаловать в тренажёр по языкам программированиям</h1>
+    </div>
+</header>
+<main class="container">
+    <div class="game-zones">
+        <section class="form-wrapper">
+            <form id="heroForm" class="form">
+                <a href={{url_for("html")}} class="form-a">Html</a>
+                <a href={{url_for("css")}} class="form-a">Css</a>
+                <a href={{url_for("javascript")}} class="form-a">Javascript</a>
+                <a href={{url_for("python")}} class="form-a">Python</a>
+            </form>
+        </section>
+    </div>
+</main>
+</body>
+</html>

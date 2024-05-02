@@ -1,0 +1,166 @@
+@font-face {
+    font-family: "Anonymous Pro";
+    src: url(fonts/AnonymousPro-Regular.ttf);
+    font-weight: 400;
+    font-style: normal;
+    display: swap;
+}
+
+@font-face {
+    font-family: "Anonymous Pro";
+    src: url(fonts/AnonymousPro-Bold.ttf);
+    font-weight: 700;
+    font-style: normal;
+    display: swap;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+@media screen and (max-width: 752px) {
+    .page-heading {
+        font-size: 32px;
+    }
+
+    .form-input,
+    .card-description,
+    .card-parameter-value,
+    .radio-label-text,
+    .radio-label-title,
+    .form-button {
+        font-size: 24px;
+    }
+
+    .form-button {
+        margin-top: 4px;
+    }
+
+    .form, .cards {
+        gap: 16px;
+    }
+
+    .cards {
+        margin-top: 16px;
+    }
+}
+
+@media screen and (max-width: 394px) {
+    .page-heading {
+        font-size: 24px;
+    }
+}
+
+header {
+    background: #FFFFFF80;
+    backdrop-filter: blur(10px);
+}
+
+body {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    font-size: 16px;
+    font-family: 'Roboto Mono', monospace;
+    background-image: url("/static/imog/nebo.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.imog-a{
+    min-height: 200px;
+    padding: 16px;
+}
+
+main{
+    flex: 1;
+    display: flex;
+    align-items: center;
+}
+
+div{
+    cursor: pointer;
+    width: 100%;
+    border-radius: 12px;
+    border: none;
+    font-weight: 400;
+    font-family: 'Roboto Mono', monospace;
+    text-transform: uppercase;
+    color: #FFFFFF;
+    text-shadow: 0 2px 8px #541d53;
+    background: linear-gradient(-90deg, #FF54FD 0%, #6654FF 100%);
+}
+
+.fsd{
+    text-shadow: 0 4px 8px #541d53;
+    background: linear-gradient(-90deg, #FF54FD 0%, #6654FF 100%);
+    }
+
+p{
+    margin: 30px 30px 30px 30px;
+}
+
+/* --------------------------------------классы-------------------------------------------------------- */
+.content{
+    max-width: 1440px;
+    margin: 0 auto;
+    padding: 16px;
+    /* border-radius: 12px; */
+}
+
+.form-al {
+    margin-top: 8px;
+    padding: 16px 0;
+    font-size: 32px;
+    font-weight: 700;
+    align-items:end;
+    align-content: end;
+    background: linear-gradient(-90deg, #5473ff 0%, #ff54cc 100%);
+    border-radius: 12px;
+}
+
+.container {
+    max-width: 1440px;
+    margin: 0 auto;
+    padding: 16px;
+}
+
+.game-zones {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 32px;
+}
+
+.form-wrapper{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.form {
+    max-width: 580px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+}
+
+.form-div {
+    margin-top: 8px;
+    padding: 16px 0;
+    font-size: 32px;
+    font-weight: 700;
+    align-items: center;
+    align-content: center;
+}
+
+.page-heading{
+    margin: 0px 0px 0px 10px;
+}
+
+.page-heding{
+    margin: 0px 0px 0px 90px;
+}

@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Тренажёр по языкам программированиям</title>
+        <link rel="icon" href="{{ url_for('static', filename='imog/nebo.jpg') }}" type="image/x-icon" />
+        <link
+            rel="shortcut icon"
+            href="{{ url_for('static', filename='imog/nebo.jpg') }}"
+            type="image/x-icon"
+        />
+    <link href="{{ url_for('static', filename='css/python.css') }}" rel="stylesheet" />
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1 class="page-heading">Основы CSS</h1>
+        </div>
+    </header>
+    <main class="container">
+        <div class="game-zones">
+            <section class="form-wrapper">
+                <form id="heroForm" class="form">
+                    <div class="form-div">
+                        <h1 class="page-heding">Основы CSS</h1>
+                        <p>CSS (Cascading Style Sheets) — язык таблиц стилей, который позволяет прикреплять стиль.
+                            Обычно CSS-стили используются для создания и изменения стиля элементов веб-страниц и
+                            пользовательских интерфейсов, написанных на языках HTML и XHTML</p>
+                        <p>Объявление стиля состоит из двух частей: селектора и объявления. В HTML имена элементов
+                            нечувствительны к регистру, поэтому «h1» работает так же, как и «H1».
+                            Объявление состоит из двух частей: имя свойства (например, color) и значение свойства
+                            (grey). Селектор сообщает браузеру, какой именно элемент форматировать,
+                            а в блоке объявления (код в фигурных скобках) перечисляются форматирующие
+                            команды — свойства и их значения.</p>
+                    </div>
+                </form>
+                <img src="/static/imog/css1.png" class="imog-a">
+                <form id="heaoForm" class="form">
+                    <div class="form-div">
+                        <h1 class="page-heding">Виды таблиц стилей</h1>
+                        <p>Внешняя таблица стилей представляет собой текстовый файл с расширением .css,
+                            в котором находится набор CSS-стилей элементов.Внутри файла могут содержатся только стили,
+                            без HTML-разметки.Внешняя таблица стилей подключается к веб-странице с помощью элемента
+                            «link», расположенного внутри раздела «head»«/head».
+                            Такие стили работают для всех страниц сайта.</p>
+                    </div>
+                </form>
+                <img src="/static/imog/css2.png" class="imog-a">
+                <form id="heqoForm" class="form">
+                    <div class="form-div">
+                        <h3 class="page-heding">Внутренние стили</h3>
+                        <p>Внутренние стили встраиваются в раздел «head»«/head» HTML-документа и
+                            определяются внутри элемента «style»«/style».</p>
+                    </div>
+                </form>
+                <img src="/static/imog/css3.png" class="imog-a">
+                <form id="heeoForm" class="form">
+                    <div class="form-div">
+                        <h3 class="page-heding"></h3>
+                        <p>Когда мы пишем встроенные стили, мы пишем CSS-код в HTML-файл,
+                            непосредственно внутри элемента с помощью атрибута style, такие стили действуют только на
+                            тот элемент, для которого они заданы.</p>
+                    </div>
+                </form>
+            </section>
+        </div>
+    </main>
+</body>
+</html>

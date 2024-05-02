@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Тренажёр по языкам программированиям</title>
+        <link rel="icon" href="{{ url_for('static', filename='imog/nebo.jpg') }}" type="image/x-icon" />
+        <link
+            rel="shortcut icon"
+            href="{{ url_for('static', filename='imog/nebo.jpg') }}"
+            type="image/x-icon"
+        />
+    <link href="{{ url_for('static', filename='css/python.css') }}" rel="stylesheet" />
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1 class="page-heading">Знакомство с тегами</h1>
+        </div>
+    </header>
+    <main class="container">
+        <div class="game-zones">
+            <section class="form-wrapper">
+                <form id="heroForm" class="form">
+                    <div class="form-div">
+                        <h1 class="page-heding">Атрибуты</h1>
+                        <p>HTML-атрибуты это специальные слова, которые управляют поведением HTML-элемента.
+                            Они добавляют дополнительную функциональность, либо меняют поведение элемента по умолчанию.
+                            Атрибуты элемента выражаются внутри начального тега элемента.</p>
+                        <p>Атрибут имеет имя и значение. Имена атрибутов должны состоять из одного или нескольких
+                            символов, кроме управляющих, таких как пробел, ", ', >, / и =.</p>
+                        <p>Атрибуты могут быть указаны четырьмя различными способами:</p>
+                        <p>1)имя атрибута, например, disabled</p>
+                        <p>2)значение атрибута без кавычек, например, autocapitalize=sentences</p>
+                        <p>3)значение атрибута в одинарных кавычках, например, type='checkbox'</p>
+                        <p>4)значение атрибута в двойных кавычках, например, class="external icon-link"</p>
+                    </div>
+                </form>
+                <img src="/static/imog/atributi.jpg" class="imog-a">
+            </section>
+        </div>
+    </main>
+</body>
+</html>

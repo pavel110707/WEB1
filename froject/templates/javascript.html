@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Тренажёр по языкам программированиям</title>
+        <link rel="icon" href="{{ url_for('static', filename='imog/nebo.jpg') }}" type="image/x-icon" />
+        <link
+            rel="shortcut icon"
+            href="{{ url_for('static', filename='imog/nebo.jpg') }}"
+            type="image/x-icon"
+        />
+    <link href="{{ url_for('static', filename='css/index.css') }}" rel="stylesheet" />
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1 class="page-heading">javascript</h1>
+        </div>
+    </header>
+    <main class="container">
+        <div class="game-zones">
+            <section class="form-wrapper">
+                <h3 class="from-h3">
+                    JavaScript  — мультипарадигменный язык программирования.
+                    Поддерживает объектно-ориентированный, императивный и функциональный стили. Является реализацией
+                    спецификации ECMAScript (стандарт ECMA-262).
+                    JavaScript обычно используется как встраиваемый язык для программного доступа к объектам приложений.
+                    Наиболее широкое применение находит в браузерах как язык сценариев для придания интерактивности
+                    веб-страницам.</h3>
+                <form id="heroForm" class="form">
+                    <a href="{{ url_for('static', filename='fail/js.pdf') }}" class="form-a">Шпаргалка</a>
+                    <a href={{url_for("javascript1")}} class="form-a">Основы JavaScript</a>
+                </form>
+            </section>
+        </div>
+    </main>
+</body>
+</html>
